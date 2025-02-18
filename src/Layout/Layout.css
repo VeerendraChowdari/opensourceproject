@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.h2 {
+    color: white !important;
+}
+
+.header {
+    background: linear-gradient(to right, #80D0C7, #B39DDB);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sidebar-icon {
+    color: #fff;
+    align-self: center;
+    padding: 0px 20px;
+
+    &:hover {
+        color: rgb(3, 9, 15);
+    }
+}
+
+.layoutbody {
+    display: flex;
+    flex: 1;
+}
+
+
+.sidebar {
+    width: 100px;
+    background: linear-gradient(to bottom, #80D0C7, #B39DDB);
+    color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar:hover {
+    width: 250px;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.sidebar .sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sidebar .sidebar-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .sidebar-icon i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.sidebar .sidebar-icon span {
+    display: none;
+}
+
+.sidebar:hover .sidebar-icon span {
+    display: inline-block;
+}
+
+.mainbody {
+    flex: 1;
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(128, 0, 128, 0.7) 0%, rgba(216, 191, 216, 0.7));
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    background-color: #60c9a2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #D291BC;
+}
+
+
+@media (max-width: 768px) {
+    .layoutbody {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbody {
+        padding: 10px;
+    }
+}

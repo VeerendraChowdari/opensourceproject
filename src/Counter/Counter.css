@@ -1,0 +1,42 @@
+.counter-container {
+    padding: 20px;
+    /* background-color: rgba(0, 0, 0, 0.7);   */
+    border-radius: 8px;
+    color: white !important;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.counter-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444 !important;
+    color: white;
+}
+
+.mainbody {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: black !important;
+}

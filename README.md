@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# Upliance Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based web application developed for the Upliance project. The application includes multiple components such as a counter, a user data form, and a rich text editor. It aims to provide an interactive UI with smooth animations and various functionalities for users to explore.
 
-Currently, two official plugins are available:
+## Technologies Used
+- React.js
+- TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Features
+- **Counter**: A counter with increment, decrement, and reset buttons.
+- **User Form**: A form for collecting user data and storing it in local storage.
+- **Rich Text Editor**: A text editor for visualizing user data with formatting options like bold, italic, and underline.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
+To run this project locally, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/VeerendraChowdari/uplianceProject.git
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Navigate into the project directory:
+   ```bash
+   cd uplianceProject
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. Run the development server:
+   ```bash
+   npm start
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Your app should now be running at Port
+
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue if you encounter any bugs or have suggestions for improvements.
+
+## License
+This project is licensed under the MIT License.

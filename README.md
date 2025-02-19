@@ -1,5 +1,3 @@
-# Upliance Project
-
 This is a React-based web application developed for the Upliance project. The application includes multiple components such as a counter, a user data form, and a rich text editor. It aims to provide an interactive UI with smooth animations and various functionalities for users to explore.
 
 ## Technologies Used

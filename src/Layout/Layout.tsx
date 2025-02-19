@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Route, Routes, Navigate } from 'react-router-dom';
 import './Layout.css';
-import Logo from "../assets/logo.avif";
 
 import Counter from '../Counter/Counter';
 import RichTextEditor from '../RichText/RichTextEditor';
@@ -17,8 +16,7 @@ const Layout: React.FC = () => {
     return (
         <div className="container">
             <div className="header">
-                <img src={Logo} alt="logo" />
-                <h3>React Project Assignment</h3>
+                <h3>React Project</h3>
                 <Link
                     to="https://www.linkedin.com/in/veerendra-kumar-chowdari-1a7238252/"
                     target="_blank"
@@ -64,8 +62,7 @@ const Layout: React.FC = () => {
             {isModalOpen && (
                 <div className="modal-overlay" onClick={handleModalToggle}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <h2> Thank You for the Opportunity!</h2>
-                        <p> I wanna thank you for shortlisted my profile and I am excited to be part of this assessment. </p>
+                        <h2> Thank You !</h2>
                         <h5>Looking forward for your valuable response.</h5>
                         <button onClick={handleModalToggle}>Close</button>
                     </div>
